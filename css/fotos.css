@@ -1,0 +1,38 @@
+#photo-container{
+    display: flex;
+    padding: 0 4px;
+    flex-wrap: wrap;
+
+}
+
+#photo-container .column{
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 4px;
+}
+.photo img{
+    width: 100%;
+}
+
+#photo-container .columnv.photo{
+    margin-top: 8px;
+     vertical-align: middle;
+}
+#photo-container .columnv .photo img{
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width:600px){
+    #photo-container .column{
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+}@media only screen and (max-width:768px){
+    #photo-container .column{
+        flex: 100%;
+        max-width: 100%;
+    }
+}
